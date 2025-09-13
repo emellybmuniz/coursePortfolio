@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! - Portfólio</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            margin-left: 0; 
+            font-family: 'roboto', sans-serif;
+        }
+
+        .thank-you-container {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .thank-you-container h1 {
+            font-size: 32px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #333;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .btn:hover {
+            background-color: var(--hover-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container thank-you-container">
+            <h1>Obrigado pelo seu contato!</h1>
+            <p>Sua mensagem foi enviada com sucesso. Responderei o mais breve possível.</p>
+            <a href="/index.html" class="btn">Voltar ao Início</a>
+        </div>
+    </main>
+</body>
+</html>
+

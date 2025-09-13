@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projeto de Faculdade</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="#" class="menu-link active">
+            <ion-icon name="person-outline"></ion-icon>
+            <span class="menu-label">Sobre</span>
+        </a>
+        <a href="#education" class="menu-link">
+            <ion-icon name="school-outline"></ion-icon>
+            <span class="menu-label">Formação</span>
+        </a>
+        <a href="#portfolio" class="menu-link">
+            <ion-icon name="briefcase-outline"></ion-icon>
+            <span class="menu-label">Portfólio</span>
+        </a>
+        <a href="#contact" class="menu-link">
+            <ion-icon name="mail-outline"></ion-icon>
+            <span class="menu-label">Contato</span>
+        </a>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Portfólio</h1>
+            <div class="dark-mode-container">
+                <ion-icon name="moon"></ion-icon>
+                <label class="dark-mode-switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 
+            Sobre mim: informações pessoais, hobbies, apresentação.
+ 
+            Formação: cursos, idiomas, formação educacional mais recente.
+ 
+            Portfólio: links para trabalhos já realizados. 
+ 
+            Contato: formulário com campos nome, e-mail e mensagem (validação obrigatória em JavaScript e simulação do envio). -->
+
+        <section id="about-me" class="container">
+            <div class="about-me-content">
+                <h2>Sobre Mim</h2>
+                <p>Sou <span class="highlight"><strong>Emelly Beatriz</strong>, <strong>desenvolvedora frontend</strong> apaixonada por criar interfaces inovadoras, úteis e visualmente atraentes. Além do código, adoro explorar arte, ler, aprender coisas novas e aproveitar bons filmes e séries. Estou sempre em busca de desafios que me impulsionem a crescer pessoal e profissionalmente! Entre em contato e vamos transformar ideias em realidade!</p>
+
+
+            <div class="btn-container">
+                <a href="downloads/ptBR-cv.pdf" class="btn" download="ptBR-cv.pdf">Abrir Currículo</a>
+                <a href="https://emellybmuniz.github.io/portfolio/" target="_blank" class="btn btn-secondary">Abrir Portfólio atual</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/emellybmuniz/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://github.com/emellybmuniz" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </div>
+            </div>
+
+            <div class="about-me-image">
+                <img src="images/icon-profile-s.png" alt="foto de perfil de Emelly Beatriz">
+            </div>
+        </section>
+
+        <section id="education" class="container">
+            <h1>Formação</h1>
+
+            <ul>
+                <li><strong>Engenharia de Software</strong> - Centro Universitário Internacional Uninter (2024 - 2028)</li>
+                <li><strong>[Outro Curso ou Certificação]</strong> - [Instituição] (Ano de Início - Ano de Conclusão)</li>
+                <li><strong>Inglês</strong> - Upper Intermediate B2</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h1>Portfólio</h1>
+
+            <ul>
+                <li><a href="[Link do Projeto 1]" target="_blank">Projeto 1</a> - Descrição breve do projeto.</li>
+                <li><a href="[Link do Projeto 2]" target="_blank">Projeto 2</a> - Descrição breve do projeto.</li>
+                <li><a href="[Link do Projeto 3]" target="_blank">Projeto 3</a> - Descrição breve do projeto.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="container" >
+            <h1>Contato</h1>
+
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Estilos para o Modo Escuro */
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --container-bg: #2c2c2c;
+  --text-color: #f0f0f0;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --primary-color: #5dae87;
+  --secondary-color: #4a7c91;
+  --tertiary-color: #a19f8c;
+  --accent-color: #ffcf56;
+}
+
+body.dark-mode header {
+  background-color: #ffcf56;
+}
+
+body.dark-mode header h1 {
+  color: #1a1a1a;
+}
+
+body.dark-mode .menu {
+  background-color: #3e3d3be8;
+}
+
+
+
+body.dark-mode #about-me .about-me-content {
+  background-color: var(--primary-color);
+  border: 1.8px solid #f1f1f1;
+  color: #f0f0f0;
+}
+
+
+body.dark-mode #about-me .about-me-image {
+  background-color: var(--accent-color);
+}
+
+body.dark-mode #about-me .btn.btn-secondary {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.dark-mode #about-me .social-links a:last-child ion-icon, body.dark-mode #about-me .social-links ion-icon  {
+  color: #f0f0f0;
+}
+
+  
+body.dark-mode #about-me .about-me-image {
+    border: 1.8px solid #f2f2f2;
+
+  }
