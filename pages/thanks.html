@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado! - Portfólio</title>
 
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/dark-mode.css">
 
     <style>
         body {
@@ -16,50 +16,57 @@
             align-items: center;
             min-height: 100vh;
             padding: 20px;
-            margin-left: 0; 
-            font-family: 'roboto', sans-serif;
+            text-align: center;
         }
 
         .thank-you-container {
             text-align: center;
-            max-width: 600px;
         }
 
         .thank-you-container h1 {
-            font-size: 32px;
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            color: var(--active-color);
+            margin-bottom: 15px;
         }
 
-        .btn {
+        .thank-you-container p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            max-width: 45ch;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .thank-you-container .btn {
             display: inline-block;
             padding: 12px 24px;
             border-radius: var(--border-radius);
-            text-decoration: none;
+            background-color: var(--active-color);
+            color: white;
             font-weight: bold;
-            transition: all 0.3s ease;
-            border: 2px solid #333;
-            background-color: var(--accent-color);
-            color: var(--text-color);
+            transition: background-color 0.3s;
+            text-decoration: none;
         }
 
-        .btn:hover {
+        .thank-you-container .btn:hover {
             background-color: var(--hover-color);
-            color: white;
         }
     </style>
 </head>
 <body>
-    <main>
-        <div class="container thank-you-container">
-            <h1>Obrigado pelo seu contato!</h1>
-            <p>Sua mensagem foi enviada com sucesso. Responderei o mais breve possível.</p>
-            <a href="/index.html" class="btn">Voltar ao Início</a>
-        </div>
-    </main>
+    <div class="thank-you-container">
+        <h1>Obrigado pelo seu contato!</h1>
+        <p>Sua mensagem foi enviada com sucesso. Responderei o mais breve possível.</p>
+        <a href="../index.html" class="btn">Voltar ao Início</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </body>
 </html>
-
