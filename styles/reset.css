@@ -1,12 +1,46 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 *,
-*:after,
-*:before {
+*::before,
+*::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  border: 0;
-  text-decoration: none;
-  box-sizing: border-box;
   list-style: none;
-  -webkit-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh; 
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; 
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
   -webkit-tap-highlight-color: transparent;
 }
+
+

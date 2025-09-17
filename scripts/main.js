@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
             darkModeToggle.checked = false;
         };
 
-        // Set initial state from localStorage
         if (localStorage.getItem('darkMode') === 'enabled') {
             enableDarkMode();
         }
@@ -70,18 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function initScrollSpy() {
         const menuLinks = document.querySelectorAll('.menu-link');
         const sections = document.querySelectorAll('main > section');
+        const header = document.querySelector('header');
 
-        if (menuLinks.length === 0 || sections.length === 0) return;
+        if (menuLinks.length === 0 || sections.length === 0 || !header) return;
 
         const onScroll = () => {
             let currentSectionId = '';
             const scrollPosition = window.pageYOffset;
+            const headerOffset = header.offsetHeight + 23;
 
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                // Highlight section when its top is within the top third of the viewport
-                if (scrollPosition >= sectionTop - sectionHeight / 3) {
+                if (scrollPosition >= sectionTop - headerOffset) {
                     currentSectionId = section.getAttribute('id');
                 }
             });
@@ -96,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         window.addEventListener('scroll', onScroll);
+        onScroll(); 
     }
 
     /**
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Animação para os itens da timeline que roda sempre que eles entram na tela.
+     * Animation for timeline items 
      */
     function initTimelineAnimation() {
         const timelineItems = document.querySelectorAll('.timeline-item');
@@ -158,7 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                // Adiciona a classe quando o elemento está visível
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
                 } else {
@@ -195,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Initializes individual, directional animations for elements in the "About Me" section.
+     * Initializes animations for elements in the "About Me" section.
      */
     function initAboutMeAnimation() {
         const animatedElements = document.querySelectorAll('.animate-from-left, .animate-from-right');

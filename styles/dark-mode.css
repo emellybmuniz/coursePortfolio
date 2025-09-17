@@ -3,6 +3,7 @@
    ========================================================================== */
 
 /* --- Variables --- */
+
 body.dark-mode {
   --bg-color: #1a1a1a;
   --container-bg: #2c2c2c;
@@ -16,6 +17,7 @@ body.dark-mode {
 }
 
 /* --- Layout --- */
+
 body.dark-mode header {
   background-color: #ffcf56;
 }
@@ -24,9 +26,8 @@ body.dark-mode main .container h2 {
   color: var(--primary-color);
 }
 
-/* --- Components --- */
-
 /* Header components */
+
 body.dark-mode .logo,
 body.dark-mode header .dark-mode-container ion-icon {
   color: #1a1a1a;
@@ -38,6 +39,7 @@ body.dark-mode .logo {
 }
 
 /* Navigation Menu */
+
 body.dark-mode .menu {
   background-color: #3e3d3be8;
 }
@@ -48,6 +50,7 @@ body.dark-mode .menu-link.active {
 }
 
 /* --- About Me Section --- */
+
 body.dark-mode #about-me .about-me-content {
   background-color: var(--primary-color);
   border: 1.8px solid #f1f1f1;
@@ -72,8 +75,9 @@ body.dark-mode #about-me .btn.btn-secondary {
   color: #f0f0f0;
 }
 
-body.dark-mode #about-me .social-links ion-icon {
-  color: #f0f0f0;
+.dark-mode .social-links a ion-icon {
+  color: #212529;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Timeline Section */
@@ -82,7 +86,24 @@ body.dark-mode .timeline-date {
   color: var(--text-color-dark);
 }
 
+body.dark-mode .timeline-content a {
+  color: var(--primary-color);
+}
+
+body.dark-mode .timeline-content a::after {
+  background-color: var(--primary-color);
+}
+
+body.dark-mode .timeline-content a:hover {
+  color: var(--accent-color);
+}
+
+body.dark-mode .timeline-content a:hover::after {
+  background-color: var(--accent-color);
+}
+
 /* Contact Form */
+
 body.dark-mode #contact-form input,
 body.dark-mode #contact-form textarea {
   background-color: #3a3a3a;
@@ -110,6 +131,7 @@ body.dark-mode footer {
 }
 
 /* --- Media Queries --- */
+
 @media (max-width: 1320px) {
 
   body.dark-mode .menu {

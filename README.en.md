@@ -27,7 +27,7 @@ This is a personal portfolio project developed with **pure HTML, CSS, and JavaSc
 
 ## 🚀 Project Overview
 
-[![Project Demonstration](src/images/project-demo)](https://emellybmuniz.github.io/coursePortfolio/)
+[![Project Demonstration](images/project-demo.gif)](https://emellybmuniz.github.io/coursePortfolio/)
 
 The project is a *Single Page Application* (SPA) that clearly and modernly showcases my journey as a developer. The navigation is smooth and intuitive, with well-defined sections.
 

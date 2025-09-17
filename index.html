@@ -63,9 +63,9 @@
       <div class="container">
         <h1 class="logo">EB</h1>
         <div class="dark-mode-container">
-          <ion-icon name="moon"></ion-icon>
+          <ion-icon name="moon" aria-hidden="true"></ion-icon>
           <label class="dark-mode-switch">
-            <input type="checkbox" id="dark-mode-toggle" />
+            <input type="checkbox" id="dark-mode-toggle" aria-label="Alternar modo escuro" />
             <span class="slider"></span>
           </label>
         </div>
@@ -78,13 +78,7 @@
         <div class="about-me-content animate-from-left">
           <h2>Sobre Mim</h2>
           <p>
-            Sou <strong>Emelly Beatriz</strong>,
-            <strong>desenvolvedora frontend</strong> apaixonada por criar
-            interfaces inovadoras, úteis e visualmente atraentes. Além do
-            código, adoro explorar arte, ler, aprender coisas novas e aproveitar
-            bons filmes e séries. Estou sempre em busca de desafios que me
-            impulsionem a crescer pessoal e profissionalmente! Entre em contato
-            e vamos transformar ideias em realidade!
+            Sou <strong>Emelly Beatriz</strong>, <strong>desenvolvedora frontend</strong> em constante evolução rumo ao full stack. Tenho paixão por transformar ideias em soluções digitais funcionais e atraentes, unindo <strong>programação</strong> e <strong>UI/UX design</strong> para criar experiências intuitivas que encantam usuários. Além do código, adoro explorar arte, ler, aprender coisas novas e aproveitar bons filmes e séries. Vamos construir algo incrível juntos? Entre em contato e transforme sua ideia em realidade digital!
           </p>
 
           <!-- Buttons -->
@@ -106,6 +100,7 @@
             <a
               href="https://www.linkedin.com/in/emellybmuniz/"
               target="_blank"
+              aria-label="Meu perfil no LinkedIn"
               rel="noopener noreferrer"
             >
               <ion-icon name="logo-linkedin"></ion-icon>
@@ -114,6 +109,7 @@
             <a
               href="https://github.com/emellybmuniz"
               target="_blank"
+              aria-label="Meu perfil no GitHub"
               rel="noopener noreferrer"
             >
               <ion-icon name="logo-github"></ion-icon>
@@ -132,61 +128,153 @@
 
       <!-- Education and Achievements -->
       <section id="education" class="container">
-        <h2>Formação e conquistas</h2>
+        <h2>Formação e Conquistas</h2>
 
         <!-- Timeline -->
-        <div class="timeline">
-          <div class="timeline-item">
+        <ol class="timeline">
+          <li class="timeline-item">
             <div class="timeline-content">
-              <h4>Início dos estudos em Programação</h4>
+              <h4>Fundamentos da Lógica de Programação</h4>
               <p>
-                Cuso de Lógica de Programação e Algoritmos do Curso em Vídeo.
+                Adquiri os fundamentos de Lógica de Programação e Algoritmos através do <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">Curso em Vídeo</a>, estabelecendo a base técnica essencial para a resolução de problemas complexos e o desenvolvimento de software.
               </p>
               <span class="timeline-date">ABR 2024</span>
             </div>
-          </div>
+          </li>
 
-          <div class="timeline-item">
+          <li class="timeline-item">
             <div class="timeline-content">
-              <h4>Desenvolvimento Web</h4>
-              <p>HTML5, CSS3 no Curso em Vídeo</p>
+              <h4>Fundamentos do Desenvolvimento Web</h4>
+              <p>
+                Aprofundei meus conhecimentos em HTML5 e CSS3 por meio dos 5 módulos do Curso HTML5 e CSS3 ofertado pelo <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">Curso em Vídeo</a>, essenciais para a criação de interfaces web modernas e responsivas.
+              </p>
               <span class="timeline-date">ABR 2024</span>
             </div>
-          </div>
-
-          <div class="timeline-item">
+          </li>
+          
+          <li class="timeline-item">
             <div class="timeline-content">
-              <h4>Curso de JavaScript Ûdemy</h4>
+              <h4>Aprofundamento em JavaScript e Ecossistema</h4>
               <p>
-                Javascript e TypeScript - front-end e back-end (Full Stack) -
-                Node, Express, noSQL, React, hooks, Redux, Design Patterns da
-                Ûdemy
+                Iniciei um curso completo de JavaScript e TypeScript (Full Stack) na Ûdemy, explorando desde o front-end com React até o back-end com Node.js.
               </p>
               <span class="timeline-date">JUN 2024 - 2025</span>
             </div>
-          </div>
-
-          <div class="timeline-item">
+          </li>
+          
+          <li class="timeline-item">
             <div class="timeline-content">
-              <h4>Faculdade de Engenharia de Software</h4>
-              <p>Centro Universitário Internacional Uninter</p>
+              <h4>Graduação em Engenharia de Software</h4>
+              <p>
+                Coroando minha dedicação aos estudos, conquistei uma bolsa integral (100%) para o curso de Engenharia de Software no Centro Universitário Internacional <a href="https://www.uninter.com/" target="_blank" rel="noopener noreferrer">Uninter</a>.
+              </p>
               <span class="timeline-date">2024 - 2028</span>
             </div>
-          </div>
-
-          <div class="timeline-item">
+          </li>
+          
+          <li class="timeline-item">
             <div class="timeline-content">
-              <h4>Certificado em Inglês EF SET - Upper Intermediate B2</h4>
+              <h4>Imersão em Inteligência Artificial - Alura</h4>
               <p>
-                Conclusão de nível avançado, com fluência para comunicação
-                profissional.
+                Participei da segunda edição do programa de imersão em IA da <a href="https://www.alura.com.br/" target="_blank" rel="noopener noreferrer">Alura</a>, com foco em aplicações práticas de inteligência artificial.
               </p>
-              <span class="timeline-date">2025</span>
+              <span class="timeline-date">MAI 2024</span>
             </div>
-          </div>
-        </div>
-      </section>
+          </li>
+          
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Programa Desenvolve - Grupo Boticário</h4>
+              <p>
+                Fui aprovada no programa Desenvolve, iniciativa do <a href="https://www.grupoboticario.com.br/" target="_blank" rel="noopener noreferrer">Grupo Boticário</a> em parceria com a <a href="https://escolakoru.com.br/" target="_blank" rel="noopener noreferrer">Koru</a>, voltado para capacitação em tecnologia e empregabilidade.
+              </p>
+              <span class="timeline-date">MAI 2025</span>
+            </div>
+          </li>
+          
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Programa por Dentro do Mercado de TI - Uninter</h4>
+              <p>
+                Concluí formações complementares oferecidas pela <a href="https://www.uninter.com/" target="_blank" rel="noopener noreferrer">Uninter</a>, abordando temas como <strong>Análise de Dados</strong> e <strong>Inteligência Artificial das Coisas (AIoT)</strong>, conectando teoria acadêmica a práticas do mercado.
+              </p>
+              <span class="timeline-date">MAR 2025</span>
+            </div>
+          </li>
+          
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Imersão em Cloud DevOps - Alura</h4>
+              <p>
+                Desenvolvi competências em <strong>Google Cloud Platform</strong>, <strong>Docker</strong> e práticas de <strong>DevOps</strong>, aplicando conceitos de escalabilidade e automação.
+              </p>
+              <span class="timeline-date">JUL 2025</span>
+            </div>
+          </li>
+          
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Engenharia de Prompt e GitHub Copilot</h4>
+              <p>
+                Participei de bootcamps da <a href="https://www.dio.me/" target="_blank" rel="noopener noreferrer">DIO</a>, onde realizei um curso sobre <strong>Prompt Engineering</strong>, aprendendo desde a construção de prompts eficazes até a aplicação prática no GitHub Copilot.
+              </p>
+              <span class="timeline-date">JUN 2025 - JUL 2025</span>
+            </div>
+          </li>
 
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Proficiência em Inglês para o Mercado Global (B2)</h4>
+              <p>
+                Conquistei a certificação da <a href="https://www.efset.org/" target="_blank" rel="noopener noreferrer">EF SET</a>, que comprova minha fluência em nível <strong>B2 - Upper Intermediate</strong> para comunicação técnica e colaboração em equipes globais.
+              </p>
+              <span class="timeline-date">JUN 2025</span>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Embaixadora Universitária DIO</h4>
+              <p>
+                Selecionada para a Turma 13 do programa Campus Expert da <a href="https://www.dio.me/" target="_blank" rel="noopener noreferrer">DIO</a>, colaborando com a comunidade de desenvolvedores e promovendo a educação em tecnologia.
+              </p>
+              <span class="timeline-date">AGO 2025 - SET 2025</span>
+            </div>
+          </li>
+          
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Fundamentos da Linguagem Java</h4>
+              <p>
+                Iniciei minha jornada no back-end com o aprendizado de Java por meio de bootcamps da <a href="https://www.dio.me/" target="_blank" rel="noopener noreferrer">DIO</a>, explorando desde a lógica de programação até aplicações práticas através de desafios de código e projetos.
+              </p>
+              <span class="timeline-date">AGO 2025</span>
+            </div>
+          </li>
+          
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Imersão em Dados com Python - Alura</h4>
+              <p>
+                Aprimorei habilidades em <strong>Python</strong> para análise de dados com <strong>Pandas</strong>, <strong>Matplotlib</strong>, <strong>Seaborn</strong> e <strong>Streamlit</strong>, desenvolvendo dashboards interativos.
+              </p>
+              <span class="timeline-date">AGO 2025</span>
+            </div>
+          </li>
+          
+          <li class="timeline-item">
+            <div class="timeline-content">
+              <h4>Versionamento de Código com Git e GitHub</h4>
+              <p>
+                Concluí formação prática em <strong>Git</strong> e <strong>GitHub</strong>, consolidando boas práticas de versionamento de código.
+              </p>
+              <span class="timeline-date">SET 2025</span>
+            </div>
+          </li>
+        
+          
+        </ol>
+    </section>
       <!-- Portfolio Section -->
       <section id="portfolio" class="container hidden-section">
         <h2>Portfólio</h2>
@@ -303,7 +391,7 @@
               >
                 <img
                   src="images/to-do-list.webp"
-                  alt="Preview do projeto Cronômetro"
+                  alt="Preview do projeto Lista de Tarefas"
                 />
                 <div class="project-info">
                   <h3>Lista de Tarefas</h3>
@@ -329,9 +417,11 @@
                 <div class="project-info">
                   <h3>Portfólio Pessoal</h3>
                   <p>
-                    Meu portfólio pessoal, desenvolvido com HTML, CSS e
-                    JavaScript, apresenta meus projetos, habilidades e
-                    trajetória profissional de forma clara e atraente.
+                    Meu portfólio principal, uma aplicação web construída
+                    com HTML, CSS e JavaScript puros. O projeto foi
+                    desenvolvido para ser uma vitrine profissional completa,
+                    integrando funcionalidades como tema dinâmico (claro/escuro),
+                    troca de idiomas e um formulário de contato funcional.
                   </p>
                 </div>
               </a>

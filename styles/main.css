@@ -12,7 +12,6 @@
     --text-color: #333;
     --font-family: "Roboto", "Arial", sans-serif;
     --bg-color: #e8f3f0;
-    --font-size: 16px;
     --border-radius: 8px;
     --container-bg: #ffffff;
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,13 +22,15 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-size: var(--font-size);
+    font-size: 1rem; 
     font-family: var(--font-family);
+    overflow-x: hidden;
 }
 
 img {
@@ -37,7 +38,7 @@ img {
     -webkit-user-drag: none;
 }
 /* ==========================================================================
-   2. Main Layout
+   Main Layout
    ========================================================================== */
 
 header {
@@ -90,7 +91,7 @@ footer p {
 
 /* --- Logo --- */
 .logo {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: bold;
   color: var(--text-color);
   background-color: var(--container-bg);
@@ -120,7 +121,7 @@ footer p {
 }
 
 .dark-mode-container ion-icon {
-  font-size: 24px;
+  font-size: 1.5rem; 
   color: var(--text-color);
 }
 
@@ -206,18 +207,30 @@ input:checked + .slider:before {
   padding: 8px 7px; 
   border-radius: 25px; 
   color: var(--text-color);
-  font-size: 24px;
+  font-size: 1.5rem;
   width: 100%; 
   transition: background-color 0.3s;
 }
 
+.menu-link.active {
+  background-color: var(--active-color);
+}
+.menu-link:hover {
+  background-color: var(--hover-color);
+}
+
+.menu-link.active,
+.menu-link:hover {
+  color: white;
+}
+
 .menu-link ion-icon {
-  font-size: 30px;
+  font-size: 1.875rem;
   min-width: 30px;
 }
 
 .menu-label {
-  font-size: 16px;
+  font-size: 1rem; 
   font-weight: 500;
   white-space: nowrap; 
   overflow: hidden;
@@ -232,18 +245,6 @@ input:checked + .slider:before {
   opacity: 1;
   max-width: 84px;
   margin-left: 16px;
-}
-
-.menu-link.active {
-  background-color: var(--active-color);
-}
-.menu-link:hover {
-  background-color: var(--hover-color);
-}
-
-.menu-link.active,
-.menu-link:hover {
-  color: white;
 }
 /* --- Timeline (Education) --- */
 .timeline {
@@ -314,8 +315,8 @@ input:checked + .slider:before {
     padding: 0;
     text-align: left;
     max-width: 100%;
-    font-size: 1rem;
     line-height: 1.5;
+    font-size: 1.2rem;
 }
 
 .timeline-date {
@@ -327,6 +328,37 @@ input:checked + .slider:before {
   border-radius: 4px;
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+.timeline-content a {
+  color: #0392df;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.timeline-content a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #044b71;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.timeline-content a:hover {
+  color: #044b71;
+}
+
+.timeline-content a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #044b71;
 }
 
 /* --- Carousel (Portfolio) --- */
@@ -388,13 +420,13 @@ input:checked + .slider:before {
 }
 
 .project-card h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 10px;
   color: var(--text-color);
 }
 
 .project-card p {
-    font-size: 15px;
+    font-size: 0.9375rem; 
     line-height: 1.5;
     text-align: center;
     margin: 0;
@@ -416,7 +448,7 @@ input:checked + .slider:before {
   color: var(--text-color);
   box-shadow: var(--shadow);
   transition: background-color 0.3s;
-  font-size: 24px;
+  font-size: 1.5rem; 
   flex-shrink: 0;
 }
 
@@ -452,8 +484,9 @@ input:checked + .slider:before {
   padding: 15px 20px;
   border: 2px solid transparent;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 1rem; 
   background-color: #f0f4f8;
+  font-family: inherit;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   color: #333;
 }
@@ -477,8 +510,8 @@ input:checked + .slider:before {
   color: white;
   border: none;
   border-radius: 15px;
-  cursor: pointer;
-  font-size: 16px;
+  cursor: pointer; 
+  font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s ease;
 }
@@ -496,8 +529,8 @@ input:checked + .slider:before {
 main .container p {
     max-width: 80ch;
     color: var(--text-color);
-    margin: 0 auto 20px auto;
-    font-size: 16px;
+    margin: 0 auto 20px auto; 
+    font-size: 1rem; 
     line-height: 1.6;
 }
 
@@ -562,7 +595,7 @@ main .container h2 {
 }
 
 #about-me p {
-    font-size: 21px;
+    font-size: 1.3125rem; 
     line-height: 1.6;
     padding-top: 12px;
     max-width: none;
@@ -573,7 +606,7 @@ main .container h2 {
 #about-me .btn-container {
     display: flex;
     gap: 15px;
-    margin: 20px 0 30px 0;
+    margin: 15px 0 30px 0;
 }
 
 #about-me .btn {
@@ -609,7 +642,7 @@ main .container h2 {
 }
 
 #about-me .social-links ion-icon {
-    font-size: 36px; 
+    font-size: 2.25rem; 
     color: #0077B5;  
 }
 
@@ -710,7 +743,7 @@ main .container h2 {
     flex-direction: column;
     gap: 4px;
     padding: 4px 8px;
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: none;
   }
 
@@ -749,7 +782,7 @@ main .container h2 {
     opacity: 1;
     max-width: 100px;
     margin-left: 0;
-    font-size: 12px;
+    font-size: 0.75rem; 
     transform: none;
     transition: none;
   }
@@ -764,7 +797,7 @@ main .container h2 {
   }
 
   #about-me p {
-    font-size: 19px;
+    font-size: 1.1875rem; 
   }
 
   #about-me .about-me-image {
@@ -823,7 +856,7 @@ main .container h2 {
   }
 
   #about-me p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   #about-me .about-me-image {
@@ -840,9 +873,11 @@ main .container h2 {
   .carousel-button {
     display: none;
   }
-
+  
   #portfolio .project-card {
     flex-basis: 90%; 
+    flex: 0 0 60%;
+    max-width: 80%;
   }
 
   #contact-form {
@@ -860,15 +895,26 @@ main .container h2 {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
+  #portfolio .project-card {
+    flex: 0 0 95%;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 470px) {
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   header .container {
     padding: 0 20px;
   }
 
-  main {
-
-    padding-left: 0;
-    padding-right: 0;
+  #about-me .about-me-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   main .container {
@@ -898,9 +944,19 @@ main .container h2 {
     align-items: stretch;
   }
 
+  #portfolio {
+    padding-left: 0;
+    padding-right: 0px;
+  }
+
+  #education {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   #contact-form input,
   #contact-form textarea {
-    font-size: 1rem; 
+    font-size: 1rem;
     width: 100%; 
   }
 }

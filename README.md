@@ -6,7 +6,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/emellybmuniz/coursePortfolio)
 ![GitHub last commit](https://img.shields.io/github/last-commit/emellybmuniz/coursePortfolio)
 ![GitHub repo size](https://img.shields.io/github/repo-size/emellybmuniz/coursePortfolio)
-![Project Status](https://img.shields.io/badge/Status%20-%20Completed%20-%20%234BC21E)
+![Project Status](https://img.shields.io/badge/Status%20-%20Completo%20-%20%234BC21E)
 
 Este é um projeto de portfólio pessoal desenvolvido com **HTML, CSS e JavaScript puros**. O site foi criado como parte de um trabalho acadêmico para o curso de Engenharia de Software no **[Centro Universitário Internacional Uninter](https://www.uninter.com/)** e serve como uma vitrine para minhas habilidades, formação e projetos.
 
@@ -27,7 +27,7 @@ Este é um projeto de portfólio pessoal desenvolvido com **HTML, CSS e JavaScri
 
 ## 🚀 Visão Geral do Projeto
 
-[![Project Demonstration](src/images/project-demo)](https://emellybmuniz.github.io/coursePortfolio/)
+[![Project Demonstration](images/project-demo.gif)](https://emellybmuniz.github.io/coursePortfolio/)
 
 O projeto consiste em uma *Single Page Application* (SPA) que apresenta de forma clara e moderna minha jornada como desenvolvedora. A navegação é fluida e intuitiva, com seções bem definidas para "Sobre Mim", "Formação e Conquistas", "Portfólio" e "Contato".
 
