@@ -32,7 +32,6 @@ Este é um projeto de portfólio pessoal desenvolvido com **HTML, CSS e JavaScri
 O projeto consiste em uma *Single Page Application* (SPA) que apresenta de forma clara e moderna minha jornada como desenvolvedora. A navegação é fluida e intuitiva, com seções bem definidas para "Sobre Mim", "Formação e Conquistas", "Portfólio" e "Contato".
 
 ## ✨ Destaques & Funcionalidades
-- **Tema Claro e Escuro:** Com alternador para preferência do usuário.
 - **Formulário de Contato:** Com validação e página de confirmação.
 - **🎨 Design Responsivo e Adaptativo:** A interface se ajusta perfeitamente a diferentes tamanhos de tela, de desktops a dispositivos móveis.
 - **🌗 Tema Claro e Escuro:** Um alternador no cabeçalho permite que o usuário escolha o tema visual de sua preferência, com a escolha sendo salva localmente.
