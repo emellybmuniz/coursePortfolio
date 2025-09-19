@@ -13,6 +13,7 @@ Este é um projeto de portfólio pessoal desenvolvido com **HTML, CSS e JavaScri
 ---
 ### 📋 Índice
 - [Visão Geral do Projeto](#-visão-geral-do-projeto)
+- [Estrutura de Diretórios](#-estrutura-de-diretórios)
 - [Destaques & Funcionalidades](#-destaques--funcionalidades)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Observação sobre o Formulário de Contato](#-observação-sobre-o-formulário-de-contato)
@@ -30,6 +31,27 @@ Este é um projeto de portfólio pessoal desenvolvido com **HTML, CSS e JavaScri
 [![Project Demonstration](images/project-demo.gif)](https://emellybmuniz.github.io/coursePortfolio/)
 
 O projeto consiste em uma *Single Page Application* (SPA) que apresenta de forma clara e moderna minha jornada como desenvolvedora. A navegação é fluida e intuitiva, com seções bem definidas para "Sobre Mim", "Formação e Conquistas", "Portfólio" e "Contato".
+
+## 📂 Estrutura de Diretórios
+```bash
+📦 COURSEPORTFOLIO
+├── 📥 downloads
+│   └── ptBR-cv.pdf
+├── 🖼️ images
+├── 📄 pages
+│   └── thanks.html
+├── ⚙️ scripts
+│   └── main.js
+├── 🎨 styles
+│   ├── dark-mode.css
+│   ├── main.css
+│   └── reset.css
+├── .gitignore
+├── favicon.ico
+├── index.html
+├── README.en.md
+└── README.md
+```
 
 ## ✨ Destaques & Funcionalidades
 - **Formulário de Contato:** Com validação e página de confirmação.

@@ -13,6 +13,7 @@ This is a personal portfolio project developed with **pure HTML, CSS, and JavaSc
 ---
 ### 📋 Index
 - [Project Overview](#-project-overview)
+- [Directory Structure](#-directory-structure)
 - [Highlights & Features](#-highlights--features)
 - [Technologies Used](#-technologies-used)
 - [Note on the Contact Form](#-note-on-the-contact-form)
@@ -24,14 +25,35 @@ This is a personal portfolio project developed with **pure HTML, CSS, and JavaSc
 - [Author](#-author)
 ---
 
-
 ## 🚀 Project Overview
+
 
 [![Project Demonstration](images/project-demo.gif)](https://emellybmuniz.github.io/coursePortfolio/)
 
 The project is a *Single Page Application* (SPA) that clearly and modernly showcases my journey as a developer. The navigation is smooth and intuitive, with well-defined sections.
 
 **Important:** Please note that the live website is in **Portuguese**. The section titles in this README are translated for clarity, but on the site, you will find them as "Sobre Mim", "Formação", "Portfólio", and "Contato".
+
+## 📂 Directory Structure
+```bash
+📦 COURSEPORTFOLIO
+├── 📥 downloads
+│   └── ptBR-cv.pdf
+├── 🖼️ images
+├── 📄 pages
+│   └── thanks.html
+├── ⚙️ scripts
+│   └── main.js
+├── 🎨 styles
+│   ├── dark-mode.css
+│   ├── main.css
+│   └── reset.css
+├── .gitignore
+├── favicon.ico
+├── index.html
+├── README.en.md
+└── README.md
+```
 
 ## ✨ Highlights & Features
 - **🎨 Responsive and Adaptive Design:** The interface adjusts perfectly to different screen sizes, from desktops to mobile devices.
