@@ -131,8 +131,8 @@ Contributions are always welcome and **greatly appreciated!** Feel free to open 
 
 ## 🔑 License
 
-This project does not have a specific license assignment.
-
+This project is licensed under the **[Type] License** - see the [LICENSE](LICENSE) file for more details.
+[Brief explanation about license permissions]
 
 ## ✍️ Author
 
