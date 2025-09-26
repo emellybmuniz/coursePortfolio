@@ -7,6 +7,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/emellybmuniz/coursePortfolio)
 ![GitHub repo size](https://img.shields.io/github/repo-size/emellybmuniz/coursePortfolio)
 ![Project Status](https://img.shields.io/badge/Status%20-%20Completo%20-%20%234BC21E)
+![GitHub Stars](https://img.shields.io/github/stars/emellybmuniz/coursePortfolio?style=social)
 
 Este é um projeto de portfólio pessoal desenvolvido com **HTML, CSS e JavaScript puros**. O site foi criado como parte de um trabalho acadêmico para o curso de Engenharia de Software no **[Centro Universitário Internacional Uninter](https://www.uninter.com/)** e serve como uma vitrine para minhas habilidades, formação e projetos.
 
