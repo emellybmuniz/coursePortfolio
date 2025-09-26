@@ -131,7 +131,9 @@ Contribuições são sempre bem-vindas e **muito apreciadas!** Sinta-se à vonta
 
 ## 🔑 Licença
 
-Este projeto não tem uma licença específica atribuída.
+Este projeto está licenciado sob a **Licença [Tipo]** - consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
+[Breve explicação sobre as permissões da licença]<img width="1458" height="54" alt="image" src="https://github.com/user-attachments/assets/aa7d5816-20dc-42a4-ae5b-c9c692c232f1" />
+
 
 ## ✍️ Autora
 
